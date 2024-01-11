@@ -1,4 +1,5 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import Chaussures from "./components/chaussures";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -15,6 +16,14 @@ export const PLASMIC = initPlasmicLoader({
   preview: false,
 });
 
+// ...
+
+PLASMIC.registerComponent(Chaussures, {
+  name: 'Chaussures',
+  props: {
+
+  }
+});
 // You can register any code components that you want to use here; see
 // https://docs.plasmic.app/learn/code-components-ref/
 // And configure your Plasmic project to use the host url pointing at
